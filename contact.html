@@ -1,0 +1,73 @@
+<!doctype html>
+<h2 id="contact" class="section__title reveal">Contact Details</h2>
+<ul class="list-plain reveal">
+<li><strong>Phone:</strong> (03) 1234 5678</li>
+<li><strong>Email:</strong> hello@wellspringclinic.example</li>
+<li><strong>Address:</strong> 123 Greenway Rd, Melbourne VIC</li>
+</ul>
+<div class="map reveal" role="img" aria-label="Map to the clinic">
+<iframe title="Google map" src="https://maps.google.com/maps?q=Melbourne%20VIC&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+</div>
+</section>
+<section>
+<h2 class="section__title reveal">Send us a message</h2>
+<form id="contactForm" class="card form-card reveal" novalidate>
+<div class="form-row">
+<label class="form-label" for="cname">Full Name</label>
+<input id="cname" name="name" type="text" required>
+</div>
+<div class="form-row">
+<label class="form-label" for="cemail">Email</label>
+<input id="cemail" name="email" type="email" required>
+</div>
+<div class="form-row">
+<label class="form-label" for="cmessage">Message</label>
+<textarea id="cmessage" name="message" rows="4" required></textarea>
+</div>
+<div class="form-actions">
+<button class="btn btn--primary" type="submit">Send</button>
+<button class="btn btn--ghost" type="reset">Reset</button>
+</div>
+</form>
+<div id="contactStatus" class="result reveal" role="status" aria-live="polite" aria-atomic="true"></div>
+</section>
+</div>
+</main>
+
+
+<footer class="site-footer">
+<div class="container grid footer-grid">
+<div>
+<h4>WellSpring Family Clinic</h4>
+<p>Community-focused healthcare for every stage of life.</p>
+</div>
+<div>
+<h4>Phone</h4>
+<p>(03) 1234 5678</p>
+</div>
+<div>
+<h4>Address</h4>
+<p>123 Greenway Rd, Melbourne VIC</p>
+</div>
+</div>
+<div class="footer-bottom"><div class="container flex between center"><small>© <span id="year"></span> WellSpring Family Clinic</small></div></div>
+</footer>
+
+
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- Initialize EmailJS with your Public Key -->
+<script>
+  (function() {
+    emailjs.init("d4g_Dm4jh0bj2U3a7");
+  })();
+</script>
+
+<!-- Main JS for forms and other site functionality -->
+<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<small class="hint">Enter your height in centimeters</small>
+</div>
+<div class="form-row">
+<label for="weight" class="form-label">Weight (kg)</label>
+<input id="weight" name="weight" type="number" inputmode="decimal" min="10" max="400" placeholder="e.g., 65" required>
+<small class="hint">Enter your weight in kilograms</small>
+</div>
+<button class="btn btn--primary" type="submit">Calculate BMI</button>
+<button class="btn btn--ghost" type="reset">Reset</button>
+</form>
+
+
+<div id="bmiResult" class="result reveal" role="status" aria-live="polite" aria-atomic="true"></div>
+
+
+<section class="info reveal" aria-label="BMI information">
+<h3>How BMI is interpreted</h3>
+<ul class="list-plain">
+<li>Underweight: &lt; 18.5</li>
+<li>Normal: 18.5–24.9</li>
+<li>Overweight: 25–29.9</li>
+<li>Obese: 30+</li>
+</ul>
+<p class="muted">This tool is a general guide only and may not suit all individuals. Consult a clinician for personal advice.</p>
+</section>
+</div>
+</main>
+
+
+<footer class="site-footer">
+<div class="container grid footer-grid">
+<div>
+<h4>WellSpring Family Clinic</h4>
+<p>Community-focused healthcare for every stage of life.</p>
+</div>
+<div>
+<h4>Phone</h4>
+<p>(03) 1234 5678</p>
+</div>
+<div>
+<h4>Address</h4>
+<p>123 Greenway Rd, Melbourne VIC</p>
+</div>
+</div>
+<div class="footer-bottom"><div class="container flex between center"><small>© <span id="year"></span> WellSpring Family Clinic</small></div></div>
+</footer>
+
+
+<script src="./assets/js/main.js" defer></script>
+</body>
+</html>
